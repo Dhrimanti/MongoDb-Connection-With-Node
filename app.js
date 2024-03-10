@@ -14,6 +14,7 @@ app.get('/hello',(req,res)=>{
 const start=async ()=>{
   try {
     await connectDB(process.env.url)
+    console.log("Hello Bhai Kaisa hain")
     app.listen(port,console.log('Bhai sun raha hu'))
   } catch (error) {
     console.log(error)
